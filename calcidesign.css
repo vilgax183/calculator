@@ -1,0 +1,110 @@
+body{
+    width: 70%;
+    margin: 0;
+    background-image: linear-gradient(to left, rgb(84, 32, 180),skyblue)
+}
+.calculators{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 200px;
+    margin-left: 200px;
+}
+.h1{
+    width: 50%;
+}
+.form16{
+    
+    width: 50%;
+}
+.formcalc{
+    margin-left: 50px;
+    position: absolute;
+    text-align: center;
+    transform: translate();
+    transition: 0.25px;
+
+}
+#display{
+
+    border: none;
+    border-radius: 30px;
+    background-color: white;
+    /* width: 200px; */
+    height: 50px;
+    margin: auto;
+    font-weight: 300;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: right;
+    border: 2px black;
+    font-size: 20px;
+}
+.buttonstyleupper{
+    border: 0;
+    background-color: white;
+    border-radius:360px;
+    width: 50px ;
+    height: 50px;
+    padding-top: -1;
+}
+.buttonstyle{
+    background-color: white;
+    border: 0;
+    border-radius:360px;
+    width:50px ;
+    height: 50px;
+    padding-top: -1;
+}
+.Operator{
+    border: 0;
+    background-color: white;
+    border-radius:10px ;
+    width: 50px;
+    height: 50px;
+    transition: 0.25;
+    cursor: pointer;
+}
+.Operator:hover{
+    background: rgb(103, 221, 205)
+}
+.zero{
+    border: 0;
+    background-color: white;
+    border-radius:360px;
+    width:100px ;
+    height: 50px;
+    padding-top: -1;
+}
+.ankush{
+    margin: 10px;
+}
+.h1 span:nth-of-type(1){
+    font-size: 90px;
+    margin-left: 40px;
+    text-emphasis-color: yellow;
+    animation: my 10s  linear infinite ;
+ 
+}
+@keyframes my {
+    0%,12%,18.999%,23%,31.999%,37%,44.999%,46%,49.999%,51%,58.999%,61%,68.999%,71%,85.999%,96%,100% {
+        opacity:0.99; text-shadow: 0 0 80px rgb(214, 73, 18),0 0 30px rgb(211, 99, 34),0 0 6px rgb(243, 7, 7);
+      }
+      19%,22.99%,32%,36.999%,45%,45.999%,50%,50.99%,59%,60.999%,69%,70.999%,86%,95.999% { 
+        opacity:0.4; text-shadow: none; 
+      }
+}
+.h1 span:nth-of-type(2){
+    margin-left: -90px;
+    font-size: 90px;
+    animation: calci 10s alternate-reverse infinite ;
+   
+}
+@keyframes calci {
+    0%,12%,18.999%,23%,31.999%,37%,44.999%,46%,49.999%,51%,58.999%,61%,68.999%,71%,85.999%,96%,100% {
+        opacity:0.99; text-shadow: 0 0 80px rgb(66, 186, 202),0 0 30px rgb(2, 243, 231),0 0 6px rgb(0, 174, 255);
+      }
+      19%,22.99%,32%,36.999%,45%,45.999%,50%,50.99%,59%,60.999%,69%,70.999%,86%,95.999% { 
+        opacity:0.4; text-shadow: none; 
+      }
+}
+  

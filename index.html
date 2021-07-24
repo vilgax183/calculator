@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyCalc</title>
+    <link rel="stylesheet" href="calcidesign.css">
+</head>
+
+<body>
+    <div class="calculators">
+        <div class="h1">
+            <h1>
+                <span class="my">
+                    My
+                </span>
+                <br>
+                <span class="calculator">
+                    Calculator
+                </span>
+            </h1>
+        </div>
+        <div class="form16">
+            <form name="Calc" class="formcalc" action="MyCalc.html" method="POST">
+                <input type="text" name="answer" id="display">
+                <div class="ankush">
+                    <input type="button" class="buttonstyleupper" value="C" onclick="Calc.answer.value=' '">
+                    <input type="button" class="buttonstyleupper" value="<"
+                        onclick="Calc.answer.value=Calc.answer.value.substring(0,calc.answer.value.length*1-1)">
+                    <input type="button" class="buttonstyleupper" value="00" onclick="Calc.answer.value+='00'">
+                    <input type="button" class="Operator" value="/" onclick="Calc.answer.value+='/ '">
+                </div>
+
+                <div class="ankush" >
+                    <input type="button" class="buttonstyle" value="7" onclick="Calc.answer.value+='7'">
+                    <input type="button" class="buttonstyle" value="8" onclick="Calc.answer.value+='8'">
+                    <input type="button" class="buttonstyle" value="9" onclick="Calc.answer.value+='9'">
+                    <input type="button" class="Operator" value="*" onclick="Calc.answer.value+='*'">
+                </div>
+                <div class="ankush">
+                    <input type="button" class="buttonstyle" value="4" onclick="Calc.answer.value+='4'">
+                    <input type="button" class="buttonstyle" value="5" onclick="Calc.answer.value+='5'">
+                    <input type="button" class="buttonstyle" value="6" onclick="Calc.answer.value+='6'">
+                    <input type="button" class="Operator" value="-" onclick="Calc.answer.value+='-'">
+                </div>
+                <div class="ankush">
+                    <input type="button" class="buttonstyle" value="1" onclick="Calc.answer.value+='1'">
+                    <input type="button" class="buttonstyle" value="2" onclick="Calc.answer.value+='2'">
+                    <input type="button" class="buttonstyle" value="3" onclick="Calc.answer.value+='3'">
+                    <input type="button" class="Operator" value="+" onclick="Calc.answer.value+='+'">
+                </div>
+                <div class="ankush">
+                    <input type="button" class="zero" value="0" onclick="Calc.answer.value+='0'">
+                    <input type="button" class="buttonstyle" value="." onclick="Calc.answer.value+='.'">
+                    <input type="button" class="Operator" value="=" onclick="Calc.answer.value=eval(Calc.answer.value)">
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
